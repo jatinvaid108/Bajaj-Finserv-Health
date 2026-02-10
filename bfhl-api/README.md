@@ -89,4 +89,4 @@ Deployed using Vercel with public access.
 👤 Author
 
 Jatin Vaid
-B.Tech CSE, Chitkara University
+B.Tech CSE, Chitkara University  
