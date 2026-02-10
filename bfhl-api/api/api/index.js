@@ -13,5 +13,4 @@ app.use(express.json());
 app.use("/bfhl", bfhlRoute);
 app.use("/health", healthRoute);
 
-// ❗ IMPORTANT: export the app (NO listen)
 module.exports = app;
