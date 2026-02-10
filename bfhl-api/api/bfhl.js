@@ -3,11 +3,7 @@ import askAI from "../src/utils/ai.js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
-    return res.status(405).json({
-      is_success: false,
-      official_email: process.env.OFFICIAL_EMAIL,
-      data: null
-    });
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
@@ -44,7 +40,7 @@ export default async function handler(req, res) {
       data: result
     });
   } catch {
-    res.status(500).json({
+    res.status(400).json({
       is_success: false,
       official_email: process.env.OFFICIAL_EMAIL,
       data: null
