@@ -1,14 +1,12 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/bfhl",
-      "destination": "/api/bfhl",
-      "permanent": true
+      "destination": "/api/bfhl"
     },
     {
       "source": "/health",
-      "destination": "/api/health",
-      "permanent": true
+      "destination": "/api/health"
     }
   ]
 }
